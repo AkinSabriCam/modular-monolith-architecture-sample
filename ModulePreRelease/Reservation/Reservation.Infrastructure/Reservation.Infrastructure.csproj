@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Reservation.Infrastructure</RootNamespace>
+    </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" Version="6.3.0" />
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
+		<PackageReference Include="MediatR.Extensions.Autofac.DependencyInjection" Version="7.4.0" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.1" />
+	</ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Folio\Integrations\Folio.Integration.Reservation\Folio.Integration.Reservation.csproj" />
+      <ProjectReference Include="..\..\Profile\Integrations\Profile.Integration.Reservation\Profile.Integration.Reservation.csproj" />
+      <ProjectReference Include="..\Reservation.Application\Reservation.Application.csproj" />
+      <ProjectReference Include="..\Reservation.Infrastructure.Shared\Reservation.Infrastructure.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

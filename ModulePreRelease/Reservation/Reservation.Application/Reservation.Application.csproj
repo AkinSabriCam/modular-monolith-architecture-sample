@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Reservation.Application</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Reservation.Application.Contract\Reservation.Application.Contract.csproj" />
+      <ProjectReference Include="..\Reservation.Domain\Reservation.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
