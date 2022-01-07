@@ -11,7 +11,7 @@ using Sample.Modules.Folio.Infrastructure.EntityFrameworkCore.Repositories;
 
 namespace Sample.Modules.Folio.Infrastructure.Configuration;
 
-public class FolioStartup
+public static class FolioStartup
 {
     private static ContainerBuilder? _containerBuilder;
 

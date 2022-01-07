@@ -7,16 +7,6 @@ public class ReservationContainerProvider
 {
     private static IContainer _container;
 
-    public static ContainerBuilder GetContainerBuilder()
-    {
-        return new ContainerBuilder();
-    }
-
-    public static IContainer GetContainer()
-    {
-        return _container;
-    }
-
     public static void SetContainer(ContainerBuilder containerBuilder)
     {
         _container = containerBuilder.Build();

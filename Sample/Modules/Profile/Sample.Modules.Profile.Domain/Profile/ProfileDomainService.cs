@@ -21,19 +21,6 @@ public class ProfileDomainService : IProfileDomainService
 
         return entity;
     }
-
-    public async Task<Profile> Update(UpdateProfileDto dto)
-    {
-        var entity = await _repository.GetById(dto.Id);
-            
-        
-        entity.SetFirstName(dto.FirstName);
-        entity.SetLastName(dto.LastName);
-        entity.Type = dto.Type;
-       
-        await _repository.Update(entity);
-        return entity;
-    }
     
     public Task Delete(Guid id)
     {

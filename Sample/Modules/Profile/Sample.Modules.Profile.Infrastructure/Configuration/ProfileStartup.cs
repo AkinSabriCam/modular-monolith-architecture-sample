@@ -17,13 +17,13 @@ using Sample.Modules.Reservation.Application.Contract.ForProfile;
 
 namespace Sample.Modules.Profile.Infrastructure.Configuration;
 
-public class ProfileStartup
+public static class ProfileStartup
 {
     public static void Initialize(string connString)
     {
         var builder = new ContainerBuilder();
 
-        builder.Register(x =>
+        builder.Register(_ =>
         {
             var optionsBuilder = new DbContextOptionsBuilder<ProfileDbContext>();
             optionsBuilder.UseNpgsql(connString);

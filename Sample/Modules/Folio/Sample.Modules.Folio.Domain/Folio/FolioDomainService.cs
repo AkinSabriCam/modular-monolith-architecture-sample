@@ -17,27 +17,11 @@ public class FolioDomainService : IFolioDomainService
         _folioRepository.Create(entity);
     }
 
-    public async Task<Folio> Update(UpdateFolioDto dto)
-    {
-        var folio = await _folioRepository.GetById(dto.Id);
-        
-        folio.SetReservationId(dto.ReservationId);
-        folio.SetProfileId(dto.ProfileId);
-        folio.SetBalance(dto.Balance);
-        folio.SetNo(dto.No);
-
-        return folio;
-    }
-
     public async Task Close(Guid id)
     {
         var folio = await _folioRepository.GetById(id);
         folio.SetBalance(0);
+        
         await _folioRepository.Update(folio);
-    }
-
-    public Task Delete(Guid id)
-    {
-        return _folioRepository.Delete(id);
     }
 }

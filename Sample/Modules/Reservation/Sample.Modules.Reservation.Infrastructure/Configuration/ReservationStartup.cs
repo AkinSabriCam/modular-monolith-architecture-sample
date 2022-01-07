@@ -17,11 +17,11 @@ using Sample.Modules.Reservation.Infrastructure.Shared;
 
 namespace Sample.Modules.Reservation.Infrastructure.Configuration;
 
-public class ReservationStartup
+public static class ReservationStartup
 {
     public static void Initialize(string connString)
     {
-        var containerBuilder = ReservationContainerProvider.GetContainerBuilder();
+        var containerBuilder = new ContainerBuilder();
 
         containerBuilder.Register(_ =>
         {

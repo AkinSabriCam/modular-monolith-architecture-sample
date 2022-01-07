@@ -2,10 +2,10 @@
 
 public class Profile
 {
-    public Guid Id { get; set; }
+    public Guid Id { get; }
     public string FirstName { get; private set; }
     public string LastName { get; private set; }
-    public ProfileType Type { get; set; }
+    public ProfileType Type { get; }
 
     public Profile(ProfileType type)
     {

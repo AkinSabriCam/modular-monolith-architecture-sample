@@ -6,11 +6,6 @@ namespace Sample.Modules.Profile.Infrastructure.Shared
     {
         private static IContainer _container;
 
-        public static ContainerBuilder GetContainerBuilder()
-        {
-            return new ContainerBuilder();
-        }
-
         public static IContainer GetContainer()
         {
             return _container;
