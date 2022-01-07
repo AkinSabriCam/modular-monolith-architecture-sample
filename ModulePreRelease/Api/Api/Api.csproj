@@ -17,11 +17,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\Folio\Folio.Infrastructure\Folio.Infrastructure.csproj" />
-      <ProjectReference Include="..\..\Profile\Profile.Application\Profile.Application.csproj" />
-      <ProjectReference Include="..\..\Profile\Profile.Infrastructure\Profile.Infrastructure.csproj" />
-      <ProjectReference Include="..\..\Reservation\Reservation.Application\Reservation.Application.csproj" />
-      <ProjectReference Include="..\..\Reservation\Reservation.Infrastructure\Reservation.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\Modules\Folio\Folio.Infrastructure\Folio.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\Modules\Profile\Profile.Application\Profile.Application.csproj" />
+      <ProjectReference Include="..\..\Modules\Profile\Profile.Infrastructure\Profile.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\Modules\Reservation\Reservation.Application\Reservation.Application.csproj" />
+      <ProjectReference Include="..\..\Modules\Reservation\Reservation.Infrastructure\Reservation.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
