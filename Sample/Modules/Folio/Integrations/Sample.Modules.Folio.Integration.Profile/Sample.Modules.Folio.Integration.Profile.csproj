@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Sample.Modules.Folio.Application\Sample.Modules.Folio.Application.csproj" />
+      <ProjectReference Include="..\..\Sample.Modules.Folio.Infrastructure.Shared\Sample.Modules.Folio.Infrastructure.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

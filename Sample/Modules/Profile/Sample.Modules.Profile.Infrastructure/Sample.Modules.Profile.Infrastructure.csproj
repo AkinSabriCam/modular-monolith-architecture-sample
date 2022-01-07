@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" Version="6.3.0" />
+		<PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
+		<PackageReference Include="MediatR.Extensions.Autofac.DependencyInjection" Version="7.4.0" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Folio\Integrations\Sample.Modules.Folio.Integration.Profile\Sample.Modules.Folio.Integration.Profile.csproj" />
+	  <ProjectReference Include="..\..\Reservation\Integrations\Reservation.Integration.Profile\Reservation.Integration.Profile.csproj" />
+	  <ProjectReference Include="..\Sample.Modules.Profile.Application\Sample.Modules.Profile.Application.csproj" />
+	  <ProjectReference Include="..\Sample.Modules.Profile.Infrastructure.Shared\Sample.Modules.Profile.Infrastructure.Shared.csproj" />
+	</ItemGroup>
+
+</Project>

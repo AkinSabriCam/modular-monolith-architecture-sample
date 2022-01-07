@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Sample.Modules.Reservation.Application\Sample.Modules.Reservation.Application.csproj" />
+      <ProjectReference Include="..\..\Sample.Modules.Reservation.Infrastructure.Shared\Sample.Modules.Reservation.Infrastructure.Shared.csproj" />
+    </ItemGroup>
+
+</Project>
