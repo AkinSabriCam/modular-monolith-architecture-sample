@@ -55,7 +55,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Modules.Profile.Inte
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integrations", "Integrations", "{79BA1370-0A3C-4AF3-9B82-9472D3367600}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reservation.Integration.Profile", "Modules\Reservation\Integrations\Reservation.Integration.Profile\Reservation.Integration.Profile.csproj", "{86F16CA7-EB4D-4BD4-9CEE-21EDE6023A41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Modules.Reservation.Integration.Profile", "Modules\Reservation\Integrations\Sample.Modules.Reservation.Integration.Profile\Sample.Modules.Reservation.Integration.Profile.csproj", "{86F16CA7-EB4D-4BD4-9CEE-21EDE6023A41}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9169364F-E819-4B2A-AF3E-0A7C0FEBFEB6}"
 EndProject

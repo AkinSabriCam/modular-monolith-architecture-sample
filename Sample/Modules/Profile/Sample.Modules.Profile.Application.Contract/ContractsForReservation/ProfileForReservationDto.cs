@@ -1,4 +1,6 @@
-﻿namespace Sample.Modules.Profile.Application.Contract.ContractsForReservation
+﻿using System;
+
+namespace Sample.Modules.Profile.Application.Contract.ContractsForReservation
 {
     public class ProfileForReservationDto
     {

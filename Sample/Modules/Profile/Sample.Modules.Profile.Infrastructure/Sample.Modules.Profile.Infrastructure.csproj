@@ -16,7 +16,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\..\Folio\Integrations\Sample.Modules.Folio.Integration.Profile\Sample.Modules.Folio.Integration.Profile.csproj" />
-	  <ProjectReference Include="..\..\Reservation\Integrations\Reservation.Integration.Profile\Reservation.Integration.Profile.csproj" />
+	  <ProjectReference Include="..\..\Reservation\Integrations\Sample.Modules.Reservation.Integration.Profile\Sample.Modules.Reservation.Integration.Profile.csproj" />
 	  <ProjectReference Include="..\Sample.Modules.Profile.Application\Sample.Modules.Profile.Application.csproj" />
 	  <ProjectReference Include="..\Sample.Modules.Profile.Infrastructure.Shared\Sample.Modules.Profile.Infrastructure.Shared.csproj" />
 	</ItemGroup>

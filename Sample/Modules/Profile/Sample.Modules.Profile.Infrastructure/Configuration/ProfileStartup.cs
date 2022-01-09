@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Sample.Modules.Profile.Application;
 using Sample.Modules.Profile.Application.Commands;
 using Sample.Modules.Profile.Infrastructure.Shared;
-using Reservation.Integration.Profile;
+using Sample.Modules.Reservation.Integration.Profile;
 using Sample.Modules.Folio.Application.Contract.ContractsForProfile;
 using Sample.Modules.Profile.Application.Contract.FolioIntegration;
 using Sample.Modules.Profile.Application.Contract.ReservationIntegration;

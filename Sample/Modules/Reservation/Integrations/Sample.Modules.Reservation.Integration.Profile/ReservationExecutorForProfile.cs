@@ -3,7 +3,7 @@ using MediatR;
 using Sample.Modules.Reservation.Application.Contract.ForProfile;
 using Sample.Modules.Reservation.Infrastructure.Shared;
 
-namespace Reservation.Integration.Profile;
+namespace Sample.Modules.Reservation.Integration.Profile;
 
 public class ReservationExecutorForProfile : IReservationExecutorForProfile
 {

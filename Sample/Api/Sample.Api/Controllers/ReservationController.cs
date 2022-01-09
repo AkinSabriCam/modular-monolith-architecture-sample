@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Sample.Modules.Reservation.Application.Commands;
 using Sample.Modules.Reservation.Application.Contract.Internal;
 using Sample.Modules.Reservation.Application.Queries;

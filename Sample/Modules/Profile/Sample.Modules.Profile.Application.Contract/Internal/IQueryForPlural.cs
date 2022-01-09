@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using System.Collections.Generic;
+using MediatR;
 
 namespace Sample.Modules.Profile.Application.Contract.Internal;
 

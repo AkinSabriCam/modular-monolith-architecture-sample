@@ -1,7 +1,10 @@
 using Autofac.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Builder;
 using Sample.Modules.Folio.Infrastructure.Configuration;
 using Sample.Modules.Folio.Infrastructure.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Sample.Modules.Folio.Application.Contract.Internal;
 using Sample.Modules.Profile.Application.Contract.Internal;
 using Sample.Modules.Profile.Infrastructure.Configuration;
@@ -36,12 +39,8 @@ builder.Services.AddScoped<IFolioExecutor, FolioExecutor>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
+app.UseSwagger();
+app.UseSwaggerUI();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

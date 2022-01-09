@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using Sample.Modules.Profile.Application.Commands;
 using Sample.Modules.Profile.Application.Contract.Internal;
 using Sample.Modules.Profile.Application.Queries;
