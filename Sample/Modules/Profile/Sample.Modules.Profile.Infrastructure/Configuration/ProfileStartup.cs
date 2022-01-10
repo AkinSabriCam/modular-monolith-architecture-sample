@@ -42,10 +42,19 @@ public static class ProfileStartup
 
         builder.RegisterMediatR(typeof(CreateProfileCommand).GetTypeInfo().Assembly);
         ProfileContainerProvider.SetContainer(builder);
+
+        MigrateDatabase().Wait();
     }
 
     public static ILifetimeScope BeginScope()
     {
         return ProfileContainerProvider.GetContainer().BeginLifetimeScope();
+    }
+    
+    private static async Task MigrateDatabase()
+    {
+        var scope = BeginScope();
+        var dbContext = scope.Resolve<ProfileDbContext>();
+        await dbContext.Database.MigrateAsync();
     }
 }

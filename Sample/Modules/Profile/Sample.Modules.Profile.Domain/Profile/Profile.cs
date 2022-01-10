@@ -13,6 +13,11 @@ public class Profile
         Type = type;
     }
 
+    // for entity framework
+    public Profile()
+    {
+        
+    }
 
     public void SetFirstName(string firstName)
     {

@@ -17,6 +17,12 @@ public class Folio
         Balance = balance;
         No = no;
     }
+
+    // for entityframework
+    public Folio()
+    {
+        Id = Guid.NewGuid();
+    }
     
     public void SetBalance(decimal balance)
     {

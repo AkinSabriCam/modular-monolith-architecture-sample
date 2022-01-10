@@ -32,10 +32,18 @@ public static class FolioStartup
         _containerBuilder.RegisterMediatR(typeof(CreateFolioCommand).GetTypeInfo().Assembly);
 
         FolioContainerProvider.SetContainer(_containerBuilder.Build());
+        MigrateDatabase().Wait();
     }
 
     public static ILifetimeScope BeginScope()
     {
         return FolioContainerProvider.BeginScope();
+    }
+    
+    private static async Task MigrateDatabase()
+    {
+        var scope = BeginScope();
+        var dbContext = scope.Resolve<FolioDbContext>();
+        await dbContext.Database.MigrateAsync();
     }
 }

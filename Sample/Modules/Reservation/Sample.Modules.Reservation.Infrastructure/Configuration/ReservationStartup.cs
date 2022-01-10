@@ -42,10 +42,18 @@ public static class ReservationStartup
 
         containerBuilder.RegisterMediatR(typeof(CreateReservationCommand).GetTypeInfo().Assembly);
         ReservationContainerProvider.SetContainer(containerBuilder);
+        MigrateDatabase().Wait();
     }
 
     public static ILifetimeScope BeginScope()
     {
         return ReservationContainerProvider.BeginScope();
+    }
+    
+    private static async Task MigrateDatabase()
+    {
+        var scope = BeginScope();
+        var dbContext = scope.Resolve<ReservationDbContext>();
+        await dbContext.Database.MigrateAsync();
     }
 }
