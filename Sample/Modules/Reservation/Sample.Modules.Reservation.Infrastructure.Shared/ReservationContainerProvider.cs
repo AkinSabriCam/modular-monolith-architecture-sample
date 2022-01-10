@@ -1,5 +1,4 @@
 ﻿using Autofac;
-using Autofac.Core;
 
 namespace Sample.Modules.Reservation.Infrastructure.Shared;
 

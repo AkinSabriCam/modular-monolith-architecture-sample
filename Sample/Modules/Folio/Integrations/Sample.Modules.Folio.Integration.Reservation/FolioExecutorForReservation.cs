@@ -20,11 +20,4 @@ public class FolioExecutorForReservation : IFolioExecutorForReservation
         var mediator = scope.Resolve<IMediator>();
         return await mediator.Send(query);
     }
-
-    public async Task<List<TResponse>> ExecuteQuery<TResponse>(IQueryForPluralForReservation<TResponse> query)
-    {
-        await using var scope = FolioContainerProvider.BeginScope();
-        var mediator = scope.Resolve<IMediator>();
-        return await mediator.Send(query);
-    }
 }

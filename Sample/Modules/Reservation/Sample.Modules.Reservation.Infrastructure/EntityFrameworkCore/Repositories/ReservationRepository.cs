@@ -13,16 +13,16 @@ public class ReservationRepository : IReservationRepository
         _dbTable = dbContext.Set<ReservationModel>();
     }
 
-    public async Task<ReservationModel> Add(ReservationModel profile)
+    public async Task Add(ReservationModel profile)
     { 
         await _dbTable.AddAsync(profile);
-        return await Task.FromResult(profile);
+        await Task.CompletedTask;
     }
 
-    public Task<ReservationModel> Update(ReservationModel profile)
+    public Task Update(ReservationModel profile)
     {
         _dbTable.Update(profile);
-        return Task.FromResult(profile);
+        return Task.CompletedTask;
     }
 
     public Task<List<ReservationModel>> Get()

@@ -12,10 +12,9 @@ public class ProfileRepository : IProfileRepository
         _dbTable = dbContext.Set<Domain.Profile.Profile>();
     }
 
-    public async Task<Domain.Profile.Profile> Add(Domain.Profile.Profile profile)
+    public async Task Add(Domain.Profile.Profile profile)
     {
        await _dbTable.AddAsync(profile);
-       return profile;
     }
 
     public Task<Domain.Profile.Profile> Update(Domain.Profile.Profile profile)

@@ -4,6 +4,6 @@ namespace Sample.Modules.Folio.Domain.Folio;
 
 public interface IFolioDomainService
 {
-    void Create(CreateFolioDto dto);
+    Task<Folio> Create(CreateFolioDto dto);
     Task Close(Guid id);
 }

@@ -6,8 +6,3 @@ public interface IQuery<TResponse> : IRequest<TResponse>
 {
     
 }
-
-public interface IQueryForPlural<TResponse> : IRequest<List<TResponse>>
-{
-    
-}

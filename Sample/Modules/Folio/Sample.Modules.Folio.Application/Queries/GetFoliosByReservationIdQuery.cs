@@ -2,7 +2,7 @@
 
 namespace Sample.Modules.Folio.Application.Queries;
 
-public class GetFoliosByReservationIdQuery : IQueryForPlural<FolioDto>
+public class GetFoliosByReservationIdQuery : IQuery<List<FolioDto>>
 {
     public Guid ReservationId { get; private set; }
 

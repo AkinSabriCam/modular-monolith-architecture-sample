@@ -2,6 +2,6 @@
 
 namespace Sample.Modules.Reservation.Application.Queries;
 
-public class GetAllReservationsQuery : IQueryForPlural<ReservationDto>
+public class GetAllReservationsQuery : IQuery<List<ReservationDto>>
 {
 }

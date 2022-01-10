@@ -2,6 +2,6 @@
 
 namespace Sample.Modules.Folio.Application.Queries;
 
-public class GetAllFoliosQuery : IQueryForPlural<FolioDto>
+public class GetAllFoliosQuery : IQuery<List<FolioDto>>
 {
 }

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Sample.Modules.Profile.Application.Contract.ReservationIntegration
+﻿namespace Sample.Modules.Profile.Application.Contract.ReservationIntegration
 {
     public class ReservationDto
     {

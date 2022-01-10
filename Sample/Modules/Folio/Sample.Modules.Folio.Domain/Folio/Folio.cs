@@ -3,11 +3,11 @@
 public class Folio
 {
     public Guid Id { get; }
-    public Guid? ProfileId { get; }
-    public Guid? ReservationId { get; }
+    public Guid? ProfileId { get; set; }
+    public Guid? ReservationId { get; set; }
 
     public decimal Balance { get; private set; }
-    public string No { get; }
+    public string No { get; set; }
     
     public Folio(Guid? profileId, Guid? reservationId, decimal balance, string no)
     {

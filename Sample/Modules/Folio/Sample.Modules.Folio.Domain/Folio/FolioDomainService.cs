@@ -11,10 +11,11 @@ public class FolioDomainService : IFolioDomainService
         _folioRepository = folioRepository;
     }
 
-    public void Create(CreateFolioDto dto)
+    public async Task<Folio> Create(CreateFolioDto dto)
     {
-        var entity = new Folio(dto.ProfileId, dto.ReservationId, dto.Balance, dto.No);
-        _folioRepository.Create(entity);
+        var folio = new Folio(dto.ProfileId, dto.ReservationId, dto.Balance, dto.No);
+        await _folioRepository.Create(folio);
+        return folio;
     }
 
     public async Task Close(Guid id)

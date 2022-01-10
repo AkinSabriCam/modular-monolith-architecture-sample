@@ -2,7 +2,7 @@
 
 namespace Sample.Modules.Reservation.Application.Queries.ForProfile;
 
-public class GetReservationsByProfileIdQuery : IQueryForProfileForPlural<ReservationDto>
+public class GetReservationsByProfileIdQuery : IQueryForProfile<List<ReservationDto>>
 {
     public Guid ProfileId { get; private set; }
 

@@ -2,7 +2,7 @@
 
 namespace Sample.Modules.Folio.Application.Queries;
 
-public class GetFoliosByProfileIdQuery : IQueryForPlural<FolioDto>
+public class GetFoliosByProfileIdQuery : IQuery<List<FolioDto>>
 {
     public Guid ProfileId { get; set; }
 

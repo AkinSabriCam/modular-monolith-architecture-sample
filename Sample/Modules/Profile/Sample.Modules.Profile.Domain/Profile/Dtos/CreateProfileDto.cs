@@ -1,6 +1,4 @@
-﻿using Sample.Modules.Profile.Domain.Profile;
-
-namespace Sample.Modules.Profile.Domain.Profile.Dtos;
+﻿namespace Sample.Modules.Profile.Domain.Profile.Dtos;
 
 public class CreateProfileDto
 {

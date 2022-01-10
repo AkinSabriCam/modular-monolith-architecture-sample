@@ -11,7 +11,7 @@ public class ReservationDomainService : IReservationDomainService
         _repository = repository;
     }
 
-    public Task<Reservation> Add(CreateReservationDto dto)
+    public async Task<Reservation> Add(CreateReservationDto dto)
     {
         var reservation = new Reservation
         {
@@ -20,7 +20,8 @@ public class ReservationDomainService : IReservationDomainService
             ProfileId = dto.ProfileId
         };
         
-        return _repository.Add(reservation);
+        await _repository.Add(reservation);
+        return reservation;
     }
 
     public async Task<Reservation> Update(UpdateReservationDto dto)
@@ -31,7 +32,8 @@ public class ReservationDomainService : IReservationDomainService
         entity.ProfileId = dto.ProfileId;
         entity.RoomNo = dto.RoomNo;
 
-        return await _repository.Update(entity);
+        await _repository.Update(entity);
+        return entity;
     }
 
     public Task Delete(Guid id)

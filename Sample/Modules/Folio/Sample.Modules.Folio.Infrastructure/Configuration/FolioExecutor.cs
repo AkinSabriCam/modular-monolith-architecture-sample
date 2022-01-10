@@ -19,11 +19,4 @@ public class FolioExecutor : IFolioExecutor
         var mediator = scope.Resolve<IMediator>();
         return await mediator.Send(query);
     }
-
-    public async Task<List<TResult>> ExecuteQuery<TResult>(IQueryForPlural<TResult> query)
-    {
-        await using var scope = FolioStartup.BeginScope();
-        var mediator = scope.Resolve<IMediator>();
-        return await mediator.Send(query);
-    }
 }

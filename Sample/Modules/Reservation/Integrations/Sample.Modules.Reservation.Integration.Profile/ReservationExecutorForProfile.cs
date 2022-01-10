@@ -20,11 +20,4 @@ public class ReservationExecutorForProfile : IReservationExecutorForProfile
         var mediator = scope.Resolve<IMediator>();
         return await mediator.Send(query);
     }
-
-    public async Task<List<TResult>> ExecuteQuery<TResult>(IQueryForProfileForPlural<TResult> query)
-    {
-        await using var scope = ReservationContainerProvider.BeginScope();
-        var mediator = scope.Resolve<IMediator>();
-        return await mediator.Send(query);
-    }
 }

@@ -39,10 +39,9 @@ public static class ProfileStartup
         
         builder.RegisterType<FolioExecutorForProfile>().As<IFolioExecutorForProfile>().InstancePerLifetimeScope();
         builder.RegisterType<FolioService>().As<IFolioService>().InstancePerLifetimeScope();
-
         builder.RegisterMediatR(typeof(CreateProfileCommand).GetTypeInfo().Assembly);
-        ProfileContainerProvider.SetContainer(builder);
 
+        ProfileContainerProvider.SetContainer(builder);
         MigrateDatabase().Wait();
     }
 
