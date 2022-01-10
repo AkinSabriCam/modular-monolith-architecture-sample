@@ -7,7 +7,7 @@ This repository is a basic sample to describe modular monolith architecture. Thi
 -  **Profile**: This module has the responsibility to manage all profiles and other related domains in the same bounded context.
 -  **Folio**: This module has the responsibility to manage all folio and other related domains in the same bounded context.
 
-> **Note**: Folio is an entity which includes the profile's charge balance.
+> **Note**: Folio is an entity that includes the profile's charge balance.
 
 # How To Run The Project
 
@@ -17,17 +17,17 @@ This repository is a basic sample to describe modular monolith architecture. Thi
  - [x] run this command in the same root
       `docker-compose up`
 
-then you can go to the this address "http://localhost:3452/swagger/index.html"
+then you can go to this address  "http://localhost:3452/swagger/index.html"
 
-![SampleApi](https://github.com/AkinSabriCam/modular-monolith-architecture-sample/blob/main/pics/SampleApi.png)
+![SampleApi](https://github.com/AkinSabriCam/modular-monolith-architecture-sample/blob/main/pics/sampleApi.jpg)
 
-## Deep To The Project
+## Content Of The A Module
 
 #### What Are The Responsibilities Of Each Layer In The Module?
 
  - **Domain Layer**: This layer must keep the domain and domain logic inside. It describes the domain rules and interfaces which affect the domain directly.
 
-  - **Application Layer**: This layer actaully includes application logic inside. The layer use the domain logic and it performs use cases.
+  - **Application Layer**: This layer actually includes application logic inside. The layer uses the domain logic and it performs use cases.
 
   - **Application.Contract Layer**: This layer is an interface of the use cases which we use in the system. This layer also includes the interface of the integration service to reach other modules use cases also includes a contract to present some use cases to other modules.
 
