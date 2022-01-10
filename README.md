@@ -19,7 +19,7 @@ This repository is a basic sample to describe modular monolith architecture. Thi
 
 then you can go to the this address "http://localhost:3452/swagger/index.html"
 
-![SampleApi](https://github.com/AkinSabriCam/modular-monolith-architecture-sample/tree/main/pics/SampleApi.png)
+![SampleApi](https://github.com/AkinSabriCam/modular-monolith-architecture-sample/blob/main/pics/SampleApi.png)
 
 ## Deep To The Project
 
@@ -38,4 +38,4 @@ then you can go to the this address "http://localhost:3452/swagger/index.html"
   - **Integration.OtherModule Layer**: A module might need data from another module sometimes. In this situation, we can use an integration project to present these use cases for other modules' use.
   
   #### Let's Look At The Diagram To Understand The Architecture.
-  ![Modular-Monolith](https://github.com/AkinSabriCam/modular-monolith-architecture-sample/tree/main/pics/Modular-Monolith.png)
+  ![Modular-Monolith](https://github.com/AkinSabriCam/modular-monolith-architecture-sample/blob/main/pics/Modular-Monolith.png)
