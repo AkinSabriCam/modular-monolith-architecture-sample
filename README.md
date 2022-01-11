@@ -21,7 +21,7 @@ then you can go to this address  "http://localhost:3452/swagger/index.html"
 
 ![SampleApi](https://github.com/AkinSabriCam/modular-monolith-architecture-sample/blob/main/pics/sampleApi.jpg)
 
-## Content Of The A Module
+## Content Of The Module
 
 #### What Are The Responsibilities Of Each Layer In The Module?
 
